@@ -20,14 +20,14 @@ export const Prestaciones = () => {
                 <h1 className=" text-center text-3xl text-black">PRESTACIONES</h1>
                 <div className="">
                   <div className="flex items-center md:justify-end px-5 m-2">
-                    <a
-                      href="/institucion/institucion"
+                    <Link
+                      to="/agregar-prestacion"
                       className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                     >
                       <button className="btn btn-verCuestionario rounded-full hover:bg-col3">
                         <img src={agregar} alt="" width="40px" />
                       </button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

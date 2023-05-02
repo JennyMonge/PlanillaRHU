@@ -1,7 +1,4 @@
-import ver from "../../../Images/iconos/ver.png";
-import eliminar from "../../../Images/iconos/eliminar.png";
-import editar from "../../../Images/iconos/editar.png";
-import agregar from "../../../Images/iconos/agregar.png";
+import { FaPlusCircle, FaRegEye, FaRegEdit, FaTrashAlt } from "react-icons/fa";
 import { Navbar } from "../../Componentes/NavBar";
 import { Aside } from "../../Componentes/Aside";
 import { Link } from "react-router-dom";
@@ -12,7 +9,7 @@ export const Prestaciones = () => {
       <Aside />
       <div class="w-full">
         <Navbar />
-        <div>
+        <div className="ml-24 mb-8 mt-8 pt-12 ">
           <main className="flex">
             <section className=" w-full relative overflow-x-auto shadow-md sm:rounded-lg">
               <div className="flex justify-between pt-5">
@@ -24,8 +21,9 @@ export const Prestaciones = () => {
                       to="/agregar-prestacion"
                       className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                     >
-                      <button className="btn btn-verCuestionario rounded-full hover:bg-col3">
-                        <img src={agregar} alt="" width="40px" />
+                      <button className="btn btn-agregar rounded-full">
+                        <span className="text-col4 text-4xl" > 
+                        <FaPlusCircle /></span>
                       </button>
                     </Link>
                   </div>
@@ -107,7 +105,9 @@ export const Prestaciones = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-ver">
-                              <img src={ver} alt="" width="30px" />
+                              <span className="text-azul-ver text-2xl">
+                                <FaRegEye/>
+                              </span>
                             </button>
                           </Link>
                           <a
@@ -115,11 +115,16 @@ export const Prestaciones = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-editar ">
-                              <img src={editar} alt="" width="25px" />
+                              <span  className="text-amarillo-editar text-2xl"> 
+                              <FaRegEdit/>
+                              </span>
+                              
                             </button>
                           </a>
                           <button className="btn btn-eliminar ">
-                            <img src={eliminar} alt="" width="25px" />
+                            <span className="text-rojo-eliminar text-xl">
+                              <FaTrashAlt/>
+                            </span>
                           </button>
                         </td>
                       </tr>
@@ -146,7 +151,9 @@ export const Prestaciones = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-ver">
-                              <img src={ver} alt="" width="30px" />
+                              <span className="text-azul-ver text-2xl">
+                                <FaRegEye/>
+                              </span>
                             </button>
                           </Link>
                           <a
@@ -154,11 +161,16 @@ export const Prestaciones = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-editar ">
-                              <img src={editar} alt="" width="25px" />
+                              <span  className="text-amarillo-editar text-2xl"> 
+                              <FaRegEdit/>
+                              </span>
+                              
                             </button>
                           </a>
                           <button className="btn btn-eliminar ">
-                            <img src={eliminar} alt="" width="25px" />
+                            <span className="text-rojo-eliminar text-xl">
+                              <FaTrashAlt/>
+                            </span>
                           </button>
                         </td>
                       </tr>
@@ -185,7 +197,9 @@ export const Prestaciones = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-ver">
-                              <img src={ver} alt="" width="30px" />
+                              <span className="text-azul-ver text-2xl">
+                                <FaRegEye/>
+                              </span>
                             </button>
                           </Link>
                           <a
@@ -193,11 +207,16 @@ export const Prestaciones = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-editar ">
-                              <img src={editar} alt="" width="25px" />
+                              <span  className="text-amarillo-editar text-2xl"> 
+                              <FaRegEdit/>
+                              </span>
+                              
                             </button>
                           </a>
                           <button className="btn btn-eliminar ">
-                            <img src={eliminar} alt="" width="25px" />
+                            <span className="text-rojo-eliminar text-xl">
+                              <FaTrashAlt/>
+                            </span>
                           </button>
                         </td>
                       </tr>
@@ -224,7 +243,9 @@ export const Prestaciones = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-ver">
-                              <img src={ver} alt="" width="30px" />
+                              <span className="text-azul-ver text-2xl">
+                                <FaRegEye/>
+                              </span>
                             </button>
                           </Link>
                           <a
@@ -232,11 +253,16 @@ export const Prestaciones = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-editar ">
-                              <img src={editar} alt="" width="25px" />
+                              <span  className="text-amarillo-editar text-2xl"> 
+                              <FaRegEdit/>
+                              </span>
+                              
                             </button>
                           </a>
                           <button className="btn btn-eliminar ">
-                            <img src={eliminar} alt="" width="25px" />
+                            <span className="text-rojo-eliminar text-xl">
+                              <FaTrashAlt/>
+                            </span>
                           </button>
                         </td>
                       </tr>

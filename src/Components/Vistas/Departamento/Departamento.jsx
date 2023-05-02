@@ -1,7 +1,4 @@
-import ver from "../../../Images/iconos/ver.png";
-import eliminar from "../../../Images/iconos/eliminar.png";
-import editar from "../../../Images/iconos/editar.png";
-import agregar from "../../../Images/iconos/agregar.png";
+import { FaPlusCircle, FaRegEye, FaRegEdit, FaTrashAlt } from "react-icons/fa";
 import { Navbar } from "../../Componentes/NavBar";
 import { Aside } from "../../Componentes/Aside";
 import { Link } from "react-router-dom";
@@ -12,27 +9,28 @@ export const Departamento = () => {
       <Aside />
       <div class="w-full">
         <Navbar />
-        <div>
+        <div className="ml-24 mb-8 mt-8 pt-12 ">
           <main className="flex">
-            <section className=" w-full relative overflow-x-auto shadow-md sm:rounded-lg">
+            <section className=" w-full relative overflow-x-auto shadow-md sm:rounded-lg pb-8">
               <div className="flex justify-between pt-5">
                 <div></div>
-                <h1 className=" text-center text-3xl text-black">DEPARTAMENTOS</h1>
+                <h1 className=" text-center text-3xl text-black pl-20">DEPARTAMENTOS</h1>
                 <div className="">
-                  <div className="flex items-center md:justify-end px-5 m-2">
+                  <div className="flex items-center md:justify-end px-5 m-2 mr-24">
                     <a
                       href="/institucion/institucion"
                       className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                     >
-                      <button className="btn btn-verCuestionario rounded-full hover:bg-col3">
-                        <img src={agregar} alt="" width="40px" />
+                     <button className="btn btn-agregar rounded-full">
+                        <span className="text-col4 text-4xl" > 
+                        <FaPlusCircle /></span>
                       </button>
                     </a>
                   </div>
                 </div>
               </div>
-              <div className="mx-5">
-                <div className="flex items-center md:justify-end pb-3 m-2">
+              <div className="mx-5 ">
+                <div className="flex items-center md:justify-end pb-3 m-2 mr-24">
                   <label htmlFor="table-search" className="sr-only">
                     Buscar
                   </label>
@@ -60,7 +58,7 @@ export const Departamento = () => {
                     />
                   </div>
                 </div>
-                <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <div className="relative overflow-x-auto shadow-md sm:rounded-lg mx-24">
                   <table className="w-full text-sm text-left text-black  dark:text-gray-400 ">
                     <thead className="text-xs text-black uppercase text-center bg-col2">
                       <tr>
@@ -78,13 +76,15 @@ export const Departamento = () => {
                         
                         <td className="px-6 py-4 font-semibold">Aseo</td>
                         
-                        <td className="px-6 py-8 text-center flex justify-center space-x-5 content-center">
+                        <td className="px-6 py-8 text-center flex justify-evenly content-center">
                           <Link
                             to="/inicio"
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-ver">
-                              <img src={ver} alt="" width="30px" />
+                              <span className="text-azul-ver text-2xl">
+                                <FaRegEye/>
+                              </span>
                             </button>
                           </Link>
                           <a
@@ -92,11 +92,16 @@ export const Departamento = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-editar ">
-                              <img src={editar} alt="" width="25px" />
+                              <span  className="text-amarillo-editar text-2xl"> 
+                              <FaRegEdit/>
+                              </span>
+                              
                             </button>
                           </a>
                           <button className="btn btn-eliminar ">
-                            <img src={eliminar} alt="" width="25px" />
+                            <span className="text-rojo-eliminar text-xl">
+                              <FaTrashAlt/>
+                            </span>
                           </button>
                         </td>
                       </tr>
@@ -105,13 +110,15 @@ export const Departamento = () => {
                         
                         <td className="px-6 py-4 font-semibold">Aseo</td>
                         
-                        <td className="px-6 py-8 text-center justify-center space-x-5 content-center">
+                        <td className="px-6 py-8 text-center flex justify-evenly content-center">
                           <Link
                             to="/inicio"
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-ver">
-                              <img src={ver} alt="" width="30px" />
+                              <span className="text-azul-ver text-2xl">
+                                <FaRegEye/>
+                              </span>
                             </button>
                           </Link>
                           <a
@@ -119,11 +126,16 @@ export const Departamento = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-editar ">
-                              <img src={editar} alt="" width="25px" />
+                              <span  className="text-amarillo-editar text-2xl"> 
+                              <FaRegEdit/>
+                              </span>
+                              
                             </button>
                           </a>
                           <button className="btn btn-eliminar ">
-                            <img src={eliminar} alt="" width="25px" />
+                            <span className="text-rojo-eliminar text-xl">
+                              <FaTrashAlt/>
+                            </span>
                           </button>
                         </td>
                       </tr>
@@ -132,13 +144,15 @@ export const Departamento = () => {
                         
                         <td className="px-6 py-4 font-semibold">Aseo</td>
                         
-                        <td className="px-6 py-8 text-center flex justify-center space-x-5 content-center">
+                        <td className="px-6 py-8 text-center flex justify-evenly content-center">
                           <Link
                             to="/inicio"
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-ver">
-                              <img src={ver} alt="" width="30px" />
+                              <span className="text-azul-ver text-2xl">
+                                <FaRegEye/>
+                              </span>
                             </button>
                           </Link>
                           <a
@@ -146,11 +160,16 @@ export const Departamento = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-editar ">
-                              <img src={editar} alt="" width="25px" />
+                              <span  className="text-amarillo-editar text-2xl"> 
+                              <FaRegEdit/>
+                              </span>
+                              
                             </button>
                           </a>
                           <button className="btn btn-eliminar ">
-                            <img src={eliminar} alt="" width="25px" />
+                            <span className="text-rojo-eliminar text-xl">
+                              <FaTrashAlt/>
+                            </span>
                           </button>
                         </td>
                       </tr>
@@ -159,13 +178,15 @@ export const Departamento = () => {
                         
                         <td className="px-6 py-4 font-semibold">Aseo</td>
                         
-                        <td className="px-6 py-8 text-center flex justify-center space-x-5 content-center">
+                        <td className="px-6 py-8 text-center flex justify-evenly content-center">
                           <Link
                             to="/inicio"
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-ver">
-                              <img src={ver} alt="" width="30px" />
+                              <span className="text-azul-ver text-2xl">
+                                <FaRegEye/>
+                              </span>
                             </button>
                           </Link>
                           <a
@@ -173,11 +194,16 @@ export const Departamento = () => {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           >
                             <button className="btn btn-editar ">
-                              <img src={editar} alt="" width="25px" />
+                              <span  className="text-amarillo-editar text-2xl"> 
+                              <FaRegEdit/>
+                              </span>
+                              
                             </button>
                           </a>
                           <button className="btn btn-eliminar ">
-                            <img src={eliminar} alt="" width="25px" />
+                            <span className="text-rojo-eliminar text-xl">
+                              <FaTrashAlt/>
+                            </span>
                           </button>
                         </td>
                       </tr>

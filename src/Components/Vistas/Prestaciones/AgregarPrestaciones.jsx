@@ -102,7 +102,7 @@ function AgregarPretacion() {
               <div className="h-full py-6 px-6 ">
                 <a>
                 <AiFillPrinter className="h-16 w-16 text-azul-ver flex justify-start"/>
-                <h1>Imprimir Boleta de pago</h1>
+                <h1>Imprimir Boleta de pagoo</h1>
                 </a>
                 
               </div>
